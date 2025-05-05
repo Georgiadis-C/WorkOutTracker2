@@ -1,11 +1,8 @@
-﻿namespace WorkOutTracker2
+﻿namespace WorkOutTracker2;
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-            Routing.RegisterRoute("WorkoutPage", typeof(WorkoutPage));
-        }
+        InitializeComponent();
     }
 }
