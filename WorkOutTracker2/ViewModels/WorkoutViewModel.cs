@@ -55,14 +55,14 @@ namespace WorkOutTracker2.ViewModels
 
         private void AddWorkoutDay()
         {
-            if (!string.IsNullOrWhiteSpace(WorkoutDate))                // Eπαλήθευση
+            if (!string.IsNullOrWhiteSpace(WorkoutDate))                // Eπαλήθευση αν η ημερομηνία της προπόνησης δεν είναι κενή
             {
                 WorkOutDays.Add(new WorkOutDay { Date = WorkoutDate });
                 WorkoutDate = string.Empty;
             }
         }
 
-        private void AddExercise()
+        private void AddExercise()                                                       // // Προσθήκη νέας άσκησης στην τελευταία ημέρα προπόνησης
         {
             if (WorkOutDays.Count > 0 && !string.IsNullOrWhiteSpace(ExerciseName))
             {

@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-
 namespace WorkOutTracker2
 {
     public static class MauiProgram
@@ -16,7 +15,7 @@ namespace WorkOutTracker2
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
