@@ -4,19 +4,28 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="2,0" EndPoint="2,1">
+            <GradientStop Color="#FF6600" Offset="0.2" />
+            <GradientStop Color="#FFBC00" Offset="0.7" />
+            <GradientStop Color="#FFE5FB" Offset="10.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
     <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="5">
-            <Border Background="#F1F1F1" StrokeShape="RoundRectangle 10">
-                <Entry Placeholder="Τι εκανες σημερα;" />
-            </Border>
-            <Border Background="#F1F1F1" StrokeShape="RoundRectangle 10">
-                <Entry Placeholder="Επαναλήψεις" />
-            </Border>
-            <Border Background="#F1F1F1" StrokeShape="RoundRectangle 10">
-                <Entry Placeholder="Σετς" />
-            </Border>
-            <Button Text="Αποθήκευση" />
-        </VerticalStackLayout>
+        <Grid>
+            <Border Background="#3D3D3D" HeightRequest="60" WidthRequest="200" VerticalOptions="Start" Stroke="Black" StrokeThickness="2" Margin="0,20,0,0" StrokeShape="RoundRectangle 10" Padding="10" />
+            <Label
+        Text="Άσκηση"
+        FontSize="30"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        TextColor="#D7D7D7"
+        />
+        </Grid>
     </ScrollView>
+    
 
 </ContentPage>

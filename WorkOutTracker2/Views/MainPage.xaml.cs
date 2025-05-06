@@ -3,9 +3,9 @@
 namespace WorkOutTracker2;
 public partial class MainPage : ContentPage
 {
-        public MainPage(WorkoutViewModel vm)
-        {
-            InitializeComponent();
-            BindingContext = vm;
-        }
+    public MainPage(WorkoutViewModel vm)
+    {
+        InitializeComponent();
+        BindingContext = vm;
+    }
 }
